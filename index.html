@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Preços</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .price-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 60%;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .price-list li {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price-list li:last-child {
+      border-bottom: none;
+    }
+    .price-list li.popular {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    .price-list li.popular .price {
+      color: #fff;
+    }
+    .price-list .price {
+      font-size: 1.5em;
+      color: #333;
+    }
+    .price-list .description {
+      color: #777;
+    }
+    .price-list button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .price-list button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
-
 <body>
-
-    <header class="header">
-        <div class="logo">
-            <a href="/">Minha Loja</a>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/produtos">Produtos</a></li>
-                <li><a href="/contato">Contato</a></li>
-                <li><a href="/carrinho">Carrinho</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="banner">
-        <img src="banner.jpg" alt="Promoção Especial">
-    </section>
-
-    <section class="produtos">
-        <h2>Produtos em Destaque</h2>
-        <div class="produtos-lista">
-            <div class="produto">
-                <img src="produto1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p>Descrição do Produto 1</p>
-                <span>R$ 99,99</span>
-                <button class="botao-comprar">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="produto2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>Descrição do Produto 2</p>
-                <span>R$ 199,99</span>
-                <button class="botao-comprar">Comprar</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 Minha Loja | Todos os direitos reservados.</p>
-    </footer>
-
+  <ul class="price-list">
+    <li>
+      <span>Produto 1</span>
+      <span class="price">R$ 99,90</span>
+      <button>Comprar</button>
+    </li>
+    <li class="popular">
+      <span>Produto 2</span>
+      <span class="price">R$ 149,90</span>
+      <button>Comprar</button>
+    </li>
+    <li>
+      <span>Produto 3</span>
+      <span class="price">R$ 199,90</span>
+      <button>Comprar</button>
+    </li>
+  </ul>
 </body>
-
 </html>
