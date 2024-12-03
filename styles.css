@@ -1,11 +1,11 @@
-#container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 400px;
     background-color: black;
 }
-#container div{
+.container div{
     height: 370px; ;
     width: 335px; ;
     background:grey ;
