@@ -1,84 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Preços</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .price-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      width: 60%;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .price-list li {
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .price-list li:last-child {
-      border-bottom: none;
-    }
-    .price-list li.popular {
-      background-color: #4CAF50;
-      color: white;
-      font-weight: bold;
-    }
-    .price-list li.popular .price {
-      color: #fff;
-    }
-    .price-list .price {
-      font-size: 1.5em;
-      color: #333;
-    }
-    .price-list .description {
-      color: #777;
-    }
-    .price-list button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .price-list button:hover {
-      background-color: #45a049;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda em Texto</title>
+    <style>
+        .text-borda {
+            font-size: 48px;
+            color: white; /* Cor interna */
+            -webkit-text-stroke: 2px black; /* Borda do texto */
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-  <ul class="price-list">
-    <li>
-      <span>Produto 1</span>
-      <span class="price">R$ 99,90</span>
-      <button>Comprar</button>
-    </li>
-    <li class="popular">
-      <span>Produto 2</span>
-      <span class="price">R$ 149,90</span>
-      <button>Comprar</button>
-    </li>
-    <li>
-      <span>Produto 3</span>
-      <span class="price">R$ 199,90</span>
-      <button>Comprar</button>
-    </li>
-  </ul>
+    <h1 class="text-borda">Texto com borda</h1>
 </body>
 </html>
